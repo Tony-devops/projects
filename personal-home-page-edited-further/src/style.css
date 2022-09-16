@@ -1,0 +1,159 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #B3ADAC;
+  font-family: 'Mukta', sans-serif;
+  margin: 0;
+}
+
+nav{
+  background-color: rgb(20,150,255);
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+  
+}
+
+nav a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.c-site-header{
+  height: 95vh;
+  background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+  filter: opacity(90%);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  
+}
+
+header::after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+.header-bg{
+  color:white;
+    font-size: 40px;
+}
+header p {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;-tile
+  color: rgb(255,0,0);
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+section h2 {
+  margin: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+ 
+
+
+.bg-blue {
+ background-color: rgb(0,120,255);
+  color: #fff;
+}
+
+.c-site-footer{
+  background-color: rgb(20,150,255);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+@media (max-width: 440px) {
+  section {
+    padding: 20px;
+  }
+}
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
