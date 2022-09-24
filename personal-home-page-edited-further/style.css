@@ -105,9 +105,10 @@ section p {
   margin-top: 0;
 }
  .game{
-  color: #fff;
-  background-color: #f52c08;
- }
+    background: white;
+  padding: 10px;
+  margin: 0;
+}
 
 
 .bg-blue {
