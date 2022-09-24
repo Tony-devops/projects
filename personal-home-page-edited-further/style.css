@@ -104,7 +104,10 @@ section h2 {
 section p {
   margin-top: 0;
 }
- 
+ .game{
+  color: #fff;
+  background-color: #f52c08;
+ }
 
 
 .bg-blue {
