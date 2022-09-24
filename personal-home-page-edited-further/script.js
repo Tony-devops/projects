@@ -139,3 +139,35 @@ document.getElementById('button_remove').addEventListener('click', (event) => {
   display_the_rolls();
 
 });
+document.getElementById('button_restart').addEventListener('click', (event) => {
+  rolls = [0, 0, 0, 0, 0, 0];
+  let element_total2 = document.getElementById('total');
+  element_total2.replaceChildren();
+  element_total2.innerText = 0;
+  let element_list3 = document.getElementById('list');
+  element_list3.replaceChildren();
+
+});
+
+document.getElementById('button_roll').addEventListener('click', (event) => {
+  tony = rolls.reduce((a,b) => a+b, 0);
+  if (tony > 11) {
+    let element_info = document.getElementById('info');
+    element_info.replaceChildren();
+    element_info.innerText = 'You Lost';
+  } else if (tony == 11) {
+    let element_info2 = document.getElementById('info');
+    element_info2.replaceChildren();
+    element_info2.innerText = 'You Won';
+  }
+
+});
+
+document.getElementById('button_remove').addEventListener('click', (event) => {
+  rolls.pop();
+  rolls.push(0);
+  let element_list4 = document.getElementById('list');
+  element_list4.replaceChildren();
+  display_the_rolls();
+
+});
