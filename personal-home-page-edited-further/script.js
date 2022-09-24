@@ -32,7 +32,6 @@ const getHeader = document.querySelectorAll("header"),
    Read and update your HTML to discover the requirements.
    The tests will run every time you update your code.
    ===================
-*/
 test("There is at least one header element", () => {
   expect(getHeader.length).toBeGreaterThanOrEqual(1);
 });
@@ -66,3 +65,4 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
+*/
