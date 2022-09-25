@@ -8,3 +8,20 @@
     max-width: 100%;
    height: auto;
    }
+   a:link {
+    color: grey;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: blue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightcoral;
+  }
+  
+  /* selected link */
+  a:active {
+    color: orange;
