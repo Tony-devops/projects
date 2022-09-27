@@ -71,6 +71,22 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
       <button id="button_restart">Start again</button>
   </section>
 </div>
+<br>
+<div id="container">
+  <section class="game">
+    <h1>I am always happy to hear from you.</h1>
+    <p>Please leave your comments below</p>
+    <label>Name:</label>
+    <input id="firstname"></input>
+    <br><br>
+    <label>Comments</label>
+    <input id="comment"></input>
+    <br><br>
+    <button id="send">Send</button>
+  <ul id="comment_name">
+  </ul>
+  </section>
+</div>
     
 <section id="contact" class="bg-blue">
   <h2>Contact</h2>
@@ -105,6 +121,45 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
     element_list2.style.color = '#ffffcc';
   
   });
+    </script>
+    <script>
+      function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+
+document.getElementById('send').addEventListener('click', (event) => {
+  let new_div = document.createElement('div');
+  new_div.setAttribute("class", 'comment_name');
+  let element_comment_name = document.getElementById('comment_name');
+  let new_span = document.createElement('span');
+  new_span.innerText = getNumberOrString(document.getElementById('firstname').value);
+
+  element_comment_name.appendChild(new_span);
+  let new_span2 = document.createElement('span');
+  new_span2.innerText = '.....Commented:';
+
+  element_comment_name.appendChild(new_span2);
+  let new_span3 = document.createElement('span');
+  new_span3.innerText = getNumberOrString(document.getElementById('comment').value);
+
+  element_comment_name.appendChild(new_span3);
+
+  event.target.appendChild(new_div);
+
+});
+getNumberOrString(document.getElementById('firstname').value);
+
+getNumberOrString(document.getElementById('firstname').value);
+
+
     </script>
    </html>
   
