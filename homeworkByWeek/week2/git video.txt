@@ -1,0 +1,17 @@
+That was the last command you ran in this course! Here's a recap of everything you've learned:
+
+pwd  stands for "print working directory." Terminal will tell you which folder you're currently in.
+
+cd  stands for "change directory." Pass it the name of another folder, and the terminal will move you to that folder. 
+
+ls  stands for "list." Running this command will show the contents of your current folder.
+
+mkdir  stands for "make directory." Running this command, plus the name of your desired new folder, will create a new folder. 
+
+touch  plus the name of your desired new file, will create a new file.
+
+mv  stands for move. Running this command, plus the name of the content you want to move, plus the location where you want to move it, will move the content.
+
+cp  stands for  copy. Running this command, plus the name of the content you want to copy, plus the location where you want to move it, will copy the content to another location.
+
+Several shortcuts allow you to be more nimble on the command line, like ctrl + e, ctrl + a, option + click, etc.
