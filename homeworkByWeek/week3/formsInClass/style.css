@@ -1,0 +1,30 @@
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+
+body{
+    background-image: linear-gradient(pink, white, wheat ,blue);
+}
+header h1, p{
+    text-align: center;
+    text-justify: auto;
+    margin: auto;
+    padding: 15px;
+    
+}
+.mainform{
+    max-width: 700px;
+    margin: auto;
+    border: 2px solid grey;
+    box-shadow: 3px 6px grey;
+    border-radius: 10px;
+    background-image: linear-gradient(#DCF8EF,#FEE2F8);
+    padding: 15px;
+}
+

@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Testing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            HTML/CSS-2 Forms and how you need them.
+        </h1>
+        <p>Let us have a go at creating a form during class</p>
+    </header>
+<br><br>
+    <main>
+        <form class="mainform">
+                <label for="fname">First Name</label>
+                <input id="fname" type="text" name="fname" placeholder="Between 3-15 Alphabets" minlength="3" maxlength="15" required>
+                <label for="lname">Last Name</label>
+                <input id="lname" type="text" name="lname" placeholder="Between 3-15 Alphabets" minlength="3" maxlength="15" required>  <br><br>
+            
+                <fieldset>
+                <legend>Cohort Name</legend>
+
+                <input id="london9" type="radio" name="cohort" value="lon9" />
+                <label for="london9">London #9</label>
+
+                <input id="london10" type="radio" name="cohort" value="lon10" />
+                <label for="london10">London #10</label>
+                <br><br>
+                <input id="agreement" type="checkbox" name="agreement" />
+                <label for="agreement">I agree to adhere to all CYF policies and accept them. </label>
+            
+                </fieldset>
+                <br>
+
+                <label for="route">How did you find out about CYF?</label>
+                <select id="route" name="route">
+                <option value="volunteer" selected>A CYF Volunteer</option>
+                <option value="Websearch">Web Search</option>
+                <option value="doe">D.O.E.</option>
+                <option value="jobcenter">Job Center</option>
+                <option value="other">Other</option>
+                </select><br>
+           <label for="description"> <strong>Anything you would like to add.</strong></label><br>
+           <textarea id="description" cols="50" rows="5"></textarea><br>
+        
+            <button>Submit</button>
+        </form>
+        <br><br>
+        <form action="https://github.com/search" method="get" class="mainform" target="_blank">
+                <label for="search">Search</label>
+                <input id="search" type="text" name="q" />
+                <button>Search GitHub</button>
+        </form>
+    </main>
+</body>
+</html>
