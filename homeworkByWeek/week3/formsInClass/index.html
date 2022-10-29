@@ -51,9 +51,26 @@
         </form>
         <br><br>
         <form action="https://github.com/search" method="get" class="mainform" target="_blank">
-                <label for="search">Search</label>
+             <label for="sort">Choose</label>
+                <select id="sorting" name="s">
+            <option value="stars" selected>Stars</option>
+            <option value="forks">Forks</option> 
+            <option value="updated">Updated</option>
+            </select>   
+            <label for="search">Search</label>
                 <input id="search" type="text" name="q" />
-                <button>Search GitHub</button>
+                <button>Search GitHub</button><br>
+                <fieldset>
+  <legend>Search Display</legend>
+
+  <input id="desc" type="radio" name="o" value="desc" />
+  <label for="desc">Descending</label>
+
+  <input id="asc" type="radio" name="o" value="asc" />
+  <label for="asc">Ascending</label>
+
+</fieldset>
+
         </form>
     </main>
 </body>
